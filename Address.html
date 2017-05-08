@@ -12,18 +12,18 @@
   <div class="row">
     <div class="col-md-5 col-md-offset-1">
       <h2>ADDRESS CONTACT</h2>
-      <form >
+      <form id="address">
         <h3>Add a contact</h3>
         <label>first name:</label>
-        <input type="text" class="form-control" id="firstname">
+        <input type="text" class="form-control" id="new-firstname">
         <label>last name:</label>
-        <input type="text" class="form-control" id="lastname">
+        <input type="text" class="form-control" id="new-lastname">
         <label> street :</label>
-        <input type="text" class="form-control" id="street">
+        <input type="text" class="form-control" id="new-street">
         <label> city :</label>
-        <input type="text" class="form-control" id="city">
+        <input type="text" class="form-control" id="new-city">
         <label>state :</label>
-        <input type="text" class="form-control" id="state">
+        <input type="text" class="form-control" id="new-state">
         <div class="row">
           <div class="col-md-offset-7">
             <button type="submit" class="btn btn-primary">another address</button>
@@ -33,6 +33,16 @@
       </form>
       <div class="row">
         <h2>Contacts:</h2>
+        <ul id="Contacts">
+
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-5 col-md-offset-2">
+      <div id="show-contact">
+        <h2></h2>
+        <p>First name : <span class="firstname"></span></p>
+        <p>Second name : <span class="firstname"></span></p>
       </div>
     </div>
   </div>
