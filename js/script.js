@@ -13,6 +13,13 @@ $(document).ready(function(){
     var newContact=new Contact(inputtedFirstname,inputtedLastname.);
     $("ul#contacts").append("<li><span class='contacts'>" +
     newContact.firstname + "</span></li>");
+    //show the last clicked name 
+    $(".contact").last().click(function(){
+      $("#show-content").show();
+      $("#show-content h2").text(newContact.firstname);
+      $(".first-name").text(newContact.firstname);
+      $(".last-name").text(newContact.firstname);
+    });
     $("input#new-firstname").val();
     $("input#new-lastname").val();
   });
