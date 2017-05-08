@@ -6,7 +6,7 @@ function Contact(first,last,street,city,state){
   this.city=city;
   this.state=state;
 };
-//prototype function to add all address details of one person to display once 
+//prototype function to add all address details of one person to display once
 Contact.prototype.fulladdress =function(){
   return this.firstname + " " + this.lastname +"  " +this.street + " " +
   this.city+"  " +this.state;
@@ -25,13 +25,19 @@ $(document).ready(function(){
     $("ul#Contacts").append("<li><span class='contacts'>" +
     newContact.fulladdress() + "</span></li>");
     //show the last clicked name
-    $(".contact").last().click(function(){
+    $(".contacts").last().click(function(){
       $("#show-contact").show();
       $("#show-contact h2").text(newContact.firstname);
       $(".first-name").text(newContact.firstname);
-      $(".last-name").text(newContact.firstname);
+      $(".last-name").text(newContact.lastname);
+        $(".street-name").text(newContact.street);
+          $(".city-name").text(newContact.city);
+            $(".state-name").text(newContact.state);
     });
     $("input#new-firstname").val();
     $("input#new-lastname").val();
+    $("input#new-street").val();
+    $("input#new-city").val();
+    $("input#new-state").val();
   });
 });
