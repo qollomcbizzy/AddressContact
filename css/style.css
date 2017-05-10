@@ -1,6 +1,9 @@
 #show-contact{
   display: none;
 }
+#contacts{
+  cursor: pointer;
+}
 .contact{
   cursor: pointer;
   color:#0088cc;
